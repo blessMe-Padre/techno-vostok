@@ -27,11 +27,13 @@ module.exports = {
       'main-black': '#262626',
       'default-black': '#000000',
       'light-black': '#5E5D5C',
-      'light-gray': '#F3F3F7',
+      'light-gray': '#CBCBCB',
       'light-blue': '#93AAD6',
       'blue': '#81B8F9',
       'green': '#D1D618',
       'dark-green': 'rgb(37, 77, 87)',
+      'light-green': '#254D57',
+      'light-green2': '#2F616D',
     },
 
     container: {
