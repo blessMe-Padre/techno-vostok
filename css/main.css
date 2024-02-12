@@ -48,6 +48,10 @@
   color: #000000;
 }
 
+.mobile-menu a {
+  color: #ffffff;
+}
+
 .btn-close-menu {
   --color:  #262626;
   width: 36px;
@@ -899,6 +903,19 @@ button.swiper-pagination-bullet{
   display: block;
 }
 
+.hero {
+  height: calc(100vh - 75px);
+  padding: 70px 0;
+  background-image: url('../src/img/hero.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero h1 {
+  line-height: 1.1;
+}
+
 /* Импорт TailWind */
 
 /* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
@@ -1514,8 +1531,16 @@ body {
   margin-bottom: 1rem;
 }
 
+.mb-8{
+  margin-bottom: 2rem;
+}
+
 .mr-4{
   margin-right: 1rem;
+}
+
+.mt-auto{
+  margin-top: auto;
 }
 
 .flex{
@@ -1599,6 +1624,25 @@ body {
 
 .pt-4{
   padding-top: 1rem;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.font-semibold{
+  font-weight: 600;
 }
 
 .text-main-black{
@@ -1688,6 +1732,20 @@ body {
   .sm\:flex-row{
     flex-direction: row;
   }
+
+  .sm\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .sm\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-\[85px\]{
+    font-size: 85px;
+  }
 }
 
 @media (min-width: 1024px){
@@ -1699,7 +1757,12 @@ body {
     display: none;
   }
 
-  .md\:pt-2{
+  .md\:py-2{
     padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .md\:text-\[85px\]{
+    font-size: 85px;
   }
 }

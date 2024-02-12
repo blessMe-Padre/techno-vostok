@@ -1,0 +1,12 @@
+.hero {
+    height: calc(100vh - 75px);
+    padding: 70px 0;
+    background-image: url('../src/img/hero.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero h1 {
+    line-height: 1.1;
+}
