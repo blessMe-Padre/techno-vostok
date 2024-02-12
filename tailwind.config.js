@@ -31,7 +31,7 @@ module.exports = {
       'light-blue': '#93AAD6',
       'blue': '#81B8F9',
       'green': '#D1D618',
-      'dark-green': 'rgb(37, 77, 87)',
+      'dark-green': '#102E30',
       'light-green': '#254D57',
       'light-green2': '#2F616D',
       'dark-blue': ' #0F3E52',

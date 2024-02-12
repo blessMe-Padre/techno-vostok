@@ -1139,16 +1139,30 @@ button.swiper-pagination-bullet{
 .form-section {
   background-image: url('../src/img/form-section-bg.webp');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   min-height: 500px;
   border-radius: 20px;
+  display: flex;
 }
 
 .form-section-block {
+  box-sizing: border-box;
   background-color: #4D4B3F;
   max-width: 465px;
   border-radius: 10px;
-  margin-left: 40px;
+  margin: 40px auto 40px 40px;
+  padding: 40px;
+}
+
+.form-section-block .form {
+  padding-right: 0;
+}
+
+@media (max-width: 450px) {
+  .form-section-block {
+    margin: 40px 20px 40px 20px;
+    padding: 20px;
+  }
 }
 
 /* Импорт TailWind */
@@ -1770,6 +1784,11 @@ body {
   z-index: 10;
 }
 
+.my-12{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -1890,7 +1909,7 @@ body {
 
 .bg-dark-green{
   --tw-bg-opacity: 1;
-  background-color: rgb(37 77 87 / var(--tw-bg-opacity));
+  background-color: rgb(16 46 48 / var(--tw-bg-opacity));
 }
 
 .bg-light-green2{
@@ -1942,6 +1961,11 @@ body {
 
 .text-center{
   text-align: center;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-3xl{
@@ -2011,7 +2035,6 @@ body {
 
 .nav-link {
   position: relative;
-  color: rgb(30, 30, 30);
 }
 
 .nav-link::before {
@@ -2074,14 +2097,13 @@ body {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12);
 }
 
-.hover\:text-blue:hover{
-  --tw-text-opacity: 1;
-  color: rgb(129 184 249 / var(--tw-text-opacity));
-}
-
 @media (min-width: 451px){
   .ss\:flex-grow{
     flex-grow: 1;
+  }
+
+  .ss\:flex-row{
+    flex-direction: row;
   }
 }
 
@@ -2102,6 +2124,10 @@ body {
     flex-direction: row;
   }
 
+  .sm\:gap-5{
+    gap: 1.25rem;
+  }
+
   .sm\:px-24{
     padding-left: 6rem;
     padding-right: 6rem;
@@ -2110,6 +2136,11 @@ body {
   .sm\:py-24{
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .sm\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .sm\:text-6xl{

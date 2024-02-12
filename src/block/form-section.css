@@ -1,14 +1,29 @@
 .form-section {
     background-image: url('../src/img/form-section-bg.webp');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     min-height: 500px;
     border-radius: 20px;
+    display: flex;
 }
 
 .form-section-block {
+    box-sizing: border-box;
     background-color: #4D4B3F;
     max-width: 465px;
     border-radius: 10px;
-    margin-left: 40px;
+    margin: 40px auto 40px 40px;
+    padding: 40px;
+}
+
+.form-section-block .form {
+    padding-right: 0;
+}
+
+@media (max-width: 450px) {
+    .form-section-block {
+        margin: 40px 20px 40px 20px;
+        padding: 20px;
+    }
+
 }

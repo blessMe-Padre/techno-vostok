@@ -52,7 +52,6 @@
 /* Директивы классов */
 .nav-link {
     position: relative;
-    color: rgb(30, 30, 30);
 }
 
 .nav-link::before {
