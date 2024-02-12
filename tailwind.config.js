@@ -22,7 +22,7 @@ module.exports = {
       'tahiti': '#3ab7bf',
       'silver': '#ecebff',
       'bubble-gum': '#ff77e9',
-      'bermuda': '#78dcca',
+      'brown': '#625F4F',
       // ---------------------------------
       'main-black': '#262626',
       'default-black': '#000000',

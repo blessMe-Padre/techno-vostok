@@ -979,6 +979,52 @@ button.swiper-pagination-bullet{
   }
 }
 
+.form {
+  padding: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-right: 300px;
+}
+
+.form__item input {
+  border-radius: 4px;
+  background: rgb(255, 255, 255);
+  padding: 15px 20px;
+  color: #000000;
+  min-width: 310px;
+}
+
+.form__button input {
+  min-width: 310px;
+  border-radius: 4px;
+  background: rgb(16, 46, 48);
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form__button input:hover {
+  background-color: #2F616D;
+}
+
+@media (max-width: 767px) {
+  .form__button,
+    .form__item {
+    width: 100%;
+  }
+
+  .form__button input,
+    .form__item input {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .form {
+    padding-right: 0;
+  }
+}
+
 /* Импорт TailWind */
 
 /* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
@@ -1570,12 +1616,24 @@ body {
   position: absolute;
 }
 
+.relative{
+  position: relative;
+}
+
 .left-5{
   left: 1.25rem;
 }
 
+.right-0{
+  right: 0px;
+}
+
 .right-5{
   right: 1.25rem;
+}
+
+.top-0{
+  top: 0px;
 }
 
 .top-5{
@@ -1676,6 +1734,11 @@ body {
 
 .rounded-xl{
   border-radius: 0.75rem;
+}
+
+.bg-brown{
+  --tw-bg-opacity: 1;
+  background-color: rgb(98 95 79 / var(--tw-bg-opacity));
 }
 
 .bg-dark-green{
@@ -1869,6 +1932,10 @@ body {
 @media (min-width: 768px){
   .sm\:mb-12{
     margin-bottom: 3rem;
+  }
+
+  .sm\:block{
+    display: block;
   }
 
   .sm\:w-auto{
