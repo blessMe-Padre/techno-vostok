@@ -34,6 +34,7 @@ module.exports = {
       'dark-green': 'rgb(37, 77, 87)',
       'light-green': '#254D57',
       'light-green2': '#2F616D',
+      'dark-blue': ' #0F3E52',
     },
 
     container: {

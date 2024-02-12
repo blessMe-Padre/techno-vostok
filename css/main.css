@@ -977,6 +977,11 @@ button.swiper-pagination-bullet{
   .catalog__list {
     grid-template-columns: 1fr;
   }
+
+  .catalog__item {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .form {
@@ -1023,6 +1028,127 @@ button.swiper-pagination-bullet{
   .form {
     padding-right: 0;
   }
+}
+
+.cooperation h2 {
+  line-height: 1.1;
+}
+
+.cooperation__list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.cooperation__item {
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 40px 30px;
+}
+
+.cooperation__item--3 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.cooperation__item--4 {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+.cooperation__item--5 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.cooperation__item--6 {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
+.cooperation__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0.1;
+}
+
+@media (max-width: 1023px) {
+  .cooperation__item {
+    padding: 20px 10px;
+  }
+
+  .cooperation__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cooperation__item--3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  .cooperation__item--4 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .cooperation__item--5 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .cooperation__item--6 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+}
+
+@media (max-width: 767px) {
+  .cooperation__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cooperation__item--1,
+    .cooperation__item--2,
+    .cooperation__item--3,
+    .cooperation__item--4,
+    .cooperation__item--5,
+    .cooperation__item--6 {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .cooperation__img {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .cooperation__list {
+    grid-template-columns: 1fr;
+  }
+
+  .cooperation__item {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.form-section {
+  background-image: url('../src/img/form-section-bg.webp');
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 500px;
+  border-radius: 20px;
+}
+
+.form-section-block {
+  background-color: #4D4B3F;
+  max-width: 465px;
+  border-radius: 10px;
+  margin-left: 40px;
 }
 
 /* Импорт TailWind */
@@ -1672,6 +1798,10 @@ body {
   margin-top: auto;
 }
 
+.inline-block{
+  display: inline-block;
+}
+
 .flex{
   display: flex;
 }
@@ -1696,6 +1826,10 @@ body {
   max-width: 56rem;
 }
 
+.max-w-\[183px\]{
+  max-width: 183px;
+}
+
 .grid-rows-\[auto_1fr_auto\]{
   grid-template-rows: auto 1fr auto;
 }
@@ -1716,6 +1850,10 @@ body {
   align-items: center;
 }
 
+.justify-center{
+  justify-content: center;
+}
+
 .justify-between{
   justify-content: space-between;
 }
@@ -1732,6 +1870,10 @@ body {
   overflow: hidden;
 }
 
+.rounded-lg{
+  border-radius: 0.5rem;
+}
+
 .rounded-xl{
   border-radius: 0.75rem;
 }
@@ -1739,6 +1881,11 @@ body {
 .bg-brown{
   --tw-bg-opacity: 1;
   background-color: rgb(98 95 79 / var(--tw-bg-opacity));
+}
+
+.bg-dark-blue{
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 62 82 / var(--tw-bg-opacity));
 }
 
 .bg-dark-green{
@@ -1751,14 +1898,14 @@ body {
   background-color: rgb(47 97 109 / var(--tw-bg-opacity));
 }
 
-.px-24{
-  padding-left: 6rem;
-  padding-right: 6rem;
-}
-
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .py-10{
@@ -1769,6 +1916,11 @@ body {
 .py-12{
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .py-9{
@@ -1918,6 +2070,10 @@ body {
   overflow: hidden;
 }
 
+.box-shadow-1 {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12);
+}
+
 .hover\:text-blue:hover{
   --tw-text-opacity: 1;
   color: rgb(129 184 249 / var(--tw-text-opacity));
@@ -1946,9 +2102,23 @@ body {
     flex-direction: row;
   }
 
+  .sm\:px-24{
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .sm\:py-24{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
   .sm\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .sm\:text-\[65px\]{
+    font-size: 65px;
   }
 
   .sm\:text-\[85px\]{

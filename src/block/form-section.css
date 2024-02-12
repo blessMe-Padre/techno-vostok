@@ -1,0 +1,14 @@
+.form-section {
+    background-image: url('../src/img/form-section-bg.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 500px;
+    border-radius: 20px;
+}
+
+.form-section-block {
+    background-color: #4D4B3F;
+    max-width: 465px;
+    border-radius: 10px;
+    margin-left: 40px;
+}

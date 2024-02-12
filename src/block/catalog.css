@@ -59,4 +59,9 @@
     .catalog__list {
         grid-template-columns: 1fr;
     }
+
+    .catalog__item {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
