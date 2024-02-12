@@ -14,3 +14,31 @@
     background-color: #5278DA;
     color: #ffffff;
 }
+
+.header-button {
+    border: 1px solid rgb(37, 77, 87);
+    border-radius: 4px;
+    font-weight: 600;
+    padding: 16px 28px;
+    transition: all 0.3s ease;
+}
+
+.header-button:hover {
+    color: #ffffff;
+    background-color: rgb(37, 77, 87);
+}
+
+.header-button-mobile {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.header-button-black {
+    background: rgb(37, 77, 87);
+    color: #ffffff;
+}
+
+.header-button-black:hover {
+    background: #ffffff;
+    color: #000000;
+}

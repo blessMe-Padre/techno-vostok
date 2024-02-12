@@ -5,6 +5,7 @@ module.exports = {
   ],
   theme: {
     screens: {
+      'ss': '451px',
       'sm': '768px',
       'md': '1024px',
       'lg': '1280px',
@@ -30,6 +31,7 @@ module.exports = {
       'light-blue': '#93AAD6',
       'blue': '#81B8F9',
       'green': '#D1D618',
+      'dark-green': 'rgb(37, 77, 87)',
     },
 
     container: {

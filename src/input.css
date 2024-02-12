@@ -44,16 +44,25 @@
 }
 
 /* Директивы классов */
-
-.header-call-button {
-    @apply py-3 px-8 bg-main-black font-bodyFont uppercase rounded-xl text-white w-44 text-center border-solid border-main-black border-[2px] transition-all block;
+.nav-link {
+    position: relative;
+    color: rgb(30, 30, 30);
 }
 
-.header-call-button:hover {
-    background-color: transparent;
-    color: #262626;
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    transition: all 0.3s ease;
+    background-color: rgb(30, 30, 30);
 }
 
+.nav-link:hover::before {
+    width: 100%;
+}
 
 /* Прочие классы */
 
