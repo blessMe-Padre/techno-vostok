@@ -57,11 +57,17 @@
 
 @media (max-width: 767px) {
     .catalog__list {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .catalog__item {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    .catalog__list {
+        grid-template-columns: 1fr;
     }
 }
