@@ -16,7 +16,7 @@
 @import './block/cooperation.css';
 @import './block/form-section.css';
 @import './block/popup.css';
-@import './block/partners.css';
+@import './block/new-style.css';
 
 
 /* Импорт TailWind */
@@ -35,8 +35,32 @@
 
 @font-face {
     font-family: 'Bebas Neue';
-    src: url('../src/fonts/BebasNeue-Regular.ttf');
-    font-weight: normal;
+    src: url('../src/fonts/BebasNeue-Bold.woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../src/fonts/BebasNeue-Regular.woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../src/fonts/BebasNeue-Light.woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Book';
+    src: url('../src/fonts/BebasNeue-Book.woff2');
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
